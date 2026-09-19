@@ -9,6 +9,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -23,6 +24,7 @@ theme:
     logo: material/school
 
 extra_css:
+  - assets/stylesheets/typography.css
   - assets/stylesheets/diagram-viewer.css
 
 extra_javascript:

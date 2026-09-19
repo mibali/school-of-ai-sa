@@ -1,0 +1,14 @@
+{#-
+  Keep the repository link, but omit Material's source component marker.
+  The marker causes the browser to request GitHub repository facts on every
+  first visit, which is unnecessary for this documentation site.
+-#}
+<a href="{{ config.repo_url }}" title="{{ lang.t('source') }}" class="md-source">
+  <div class="md-source__icon md-icon">
+    {% set icon = config.theme.icon.repo or "fontawesome/brands/git-alt" %}
+    {% include ".icons/" ~ icon ~ ".svg" %}
+  </div>
+  <div class="md-source__repository">
+    {{ config.repo_name }}
+  </div>
+</a>
