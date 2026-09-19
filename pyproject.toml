@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "school-of-ai-sa"
+version = "0.1.0"
+description = "Build helpers for the School of AI SA documentation site"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = ["school_of_ai_sa*"]

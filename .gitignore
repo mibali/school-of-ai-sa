@@ -1,0 +1,5 @@
+/site/
+/.amp/
+__pycache__/
+*.egg-info/
+*.py[cod]

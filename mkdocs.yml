@@ -1,0 +1,63 @@
+site_name: School of AI SA
+site_description: >-
+  A free, open curriculum for the AI Solutions Architect role — how to design
+  AI systems that are reliable, secure, cost-effective, and useful.
+site_url: https://mibali.github.io/school-of-ai-sa/
+repo_url: https://github.com/mibali/school-of-ai-sa
+repo_name: mibali/school-of-ai-sa
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  icon:
+    logo: material/school
+
+extra_css:
+  - assets/stylesheets/diagram-viewer.css
+
+extra_javascript:
+  - assets/javascripts/diagram-viewer.js
+
+nav:
+  - Home: index.md
+  - Level 101:
+      - AI and Machine Learning Basics: level101/ai_ml_basics.md
+      - LLM Fundamentals: level101/llm_fundamentals.md
+      - Cloud and AI Services Landscape: level101/cloud_basics.md
+      - Data for AI: level101/data.md
+      - Systems Design: level101/systems_design.md
+      - Security Fundamentals: level101/security.md
+  - Level 102:
+      - RAG Architecture: level102/rag_architecture.md
+      - Agents and Orchestration: level102/agents.md
+      - MLOps and LLMOps: level102/llmops.md
+      - Evaluation, Observability, and Guardrails: level102/evaluation.md
+      - Cost Engineering for AI: level102/cost_engineering.md
+      - Governance, Safety, and Responsible AI: level102/governance.md
+      - "The Practice: Discovery to Production": level102/solution_architecture_practice.md
+  - Capstone Projects: capstones.md
+  - Contribute: CONTRIBUTING.md
+  - Code of Conduct: CODE_OF_CONDUCT.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:school_of_ai_sa.diagram_fence.mermaid_fence
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - toc:
+      permalink: true
