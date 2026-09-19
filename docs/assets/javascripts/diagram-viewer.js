@@ -102,12 +102,15 @@
   function setInitialZoom() {
     const diagram = canvas.querySelector("svg");
     const viewport = dialog.querySelector(".diagram-lightbox__viewport");
-    if (!diagram || !viewport) return;
+    const viewBox = diagram?.viewBox.baseVal;
+    if (viewBox?.width && viewBox.height && viewport) {
+      const maxWidth = viewport.clientWidth * 0.9;
+      const maxHeight = viewport.clientHeight * 0.8;
+      const aspectRatio = viewBox.width / viewBox.height;
+      canvas.style.width = `${Math.min(maxWidth, maxHeight * aspectRatio)}px`;
+    }
 
-    const diagramWidth = diagram.getBoundingClientRect().width;
-    const viewportWidth = viewport.getBoundingClientRect().width;
-    const extraHorizontalSpace = (viewportWidth * 0.75) / diagramWidth;
-    zoom = Math.min(1.5, Math.max(1, extraHorizontalSpace));
+    zoom = 1;
     updateTransform();
   }
 

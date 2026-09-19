@@ -61,6 +61,14 @@ Three end-to-end projects that exercise the full curriculum, from a vague brief 
 
 Work through Level 101 in order if you are new to any of the topics. If you already ship AI features, start at Level 102 and dip back into 101 when you hit a gap. Every module ends with a hands-on lab and further reading. The labs favour free tiers and open tools so nobody needs a budget to learn.
 
+## Make the curriculum practical
+
+Start with [Start here: choose your path](toolkit/start-here.md) if you are unsure which material to take first. It includes a short diagnostic and a foundations path for people who need more confidence with APIs, Python, cloud, data, or security.
+
+Use the [AI SA Delivery Playbook](toolkit/delivery-playbook.md) to connect the courses to real work. It takes a project from discovery through data readiness, prototype evidence, release, and ongoing operation. The [architecture and delivery templates](toolkit/templates.md) provide copyable briefs, ADRs, cost models, risk registers, experiment reports, UAT sign-offs, and support handovers.
+
+When you are ready to demonstrate your work, use the [portfolio guide](toolkit/portfolio-guide.md) with the [capstone projects](capstones.md). It helps you present decisions, evidence, risk, cost, and operations—not just a polished model demo.
+
 We believe continuous learning helps in acquiring deeper knowledge and competencies. Every module lists references that can guide further learning. Our hope is that going through these modules builds the essential skills required for an AI Solutions Architect.
 
 This curriculum is open. It is a starting point, and we hope the community helps refine and expand it. Check out [the contributing guide](CONTRIBUTING.md) to get started.

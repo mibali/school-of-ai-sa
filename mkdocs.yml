@@ -30,6 +30,7 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Start Here: toolkit/start-here.md
   - Level 101:
       - AI and Machine Learning Basics: level101/ai_ml_basics.md
       - LLM Fundamentals: level101/llm_fundamentals.md
@@ -45,6 +46,13 @@ nav:
       - Cost Engineering for AI: level102/cost_engineering.md
       - Governance, Safety, and Responsible AI: level102/governance.md
       - "The Practice: Discovery to Production": level102/solution_architecture_practice.md
+  - Practical Toolkit:
+      - AI SA Delivery Playbook: toolkit/delivery-playbook.md
+      - Architecture and delivery templates: toolkit/templates.md
+      - Evidence, benchmarking, and AI QA: toolkit/evidence-and-qa.md
+      - Production readiness, UAT, and operational handover: toolkit/production-readiness.md
+      - Applied architecture electives: toolkit/applied-electives.md
+      - Build an AI SA portfolio: toolkit/portfolio-guide.md
   - Capstone Projects: capstones.md
   - Contribute: CONTRIBUTING.md
   - Code of Conduct: CODE_OF_CONDUCT.md
